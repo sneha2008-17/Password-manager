@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 Password Manager</h1>
+
+    <div class="form">
+
+        <label>Website</label>
+        <input
+            type="text"
+            id="website"
+            placeholder="Enter website">
+
+        <label>Username / Email</label>
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter username">
+
+        <label>Password</label>
+
+        <div class="password-box">
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password">
+
+            <button id="togglePassword">
+                👁
+            </button>
+        </div>
+
+        <div class="button-group">
+
+            <button id="generateBtn">
+                Generate Password
+            </button>
+
+            <button id="saveBtn">
+                Save Credential
+            </button>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>Saved Credentials</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search website or username">
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="credentialTable">
+
+            <!-- JavaScript will add rows here -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
